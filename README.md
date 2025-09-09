@@ -8,26 +8,26 @@ Premium owners gain access to **AI-powered insights and analytics** after subscr
 
 ---
 
-##  Features  
+## Features  
 
-###  Customer  
+### Customer  
 - Sign up / Login.  
-- Share location (via HERE API → converts city & district into lat/lng).  
+- Share location (via **HERE API** → converts city & district into lat/lng).  
 - Browse nearby food trucks (distance calculation).  
 - Search and filter trucks by category (e.g., burgers, desserts).  
 - View truck profiles (menu, reviews, operating hours).  
 - Add items to cart and place orders.  
-- Pay online (Moyasar payment gateway).  
+- Pay online (**Moyasar payment gateway**).  
 - Track orders (PLACED → READY → COMPLETED).  
 - Write reviews and view average ratings.  
 - Receive notifications for offers and order updates.  
 
-###  Owner  
+### Owner  
 - Register / Login.  
 - Add / Update / Delete food trucks.  
-- Upload truck images (AWS S3).  
+- Upload truck images (**AWS S3**).  
 - Manage menu items (CRUD, price updates, availability).  
-- Upload item images (AWS S3).  
+- Upload item images (**AWS S3**).  
 - Create and manage discounts.  
 - Open / Close truck.  
 - Manage orders (change status).  
@@ -41,7 +41,7 @@ Premium owners gain access to **AI-powered insights and analytics** after subscr
   - Advanced reporting & analytics.  
 - Subscription and renewal through **Moyasar** payment API.  
 
-###  Admin  
+### Admin  
 - View all users.  
 - Delete users.  
 - Delete food trucks.  
@@ -49,7 +49,7 @@ Premium owners gain access to **AI-powered insights and analytics** after subscr
 
 ---
 
-##  Tech Stack  
+## Tech Stack  
 - **Backend:** Spring Boot 3, Spring Security, Hibernate/JPA  
 - **Database:** MySQL  
 - **Storage:** AWS S3 (for truck and item images)  
@@ -85,8 +85,32 @@ Premium owners gain access to **AI-powered insights and analytics** after subscr
 
 ---
 
-Diagrams
+## Diagrams
 
-ER Diagram: (add docs/ERD.png).
+### ER Diagram
+![ER Diagram](https://github.com/HassanAL-Hussaini/Trucksy/blob/master/Untitled%20diagram%20_%20Mermaid%20Chart-2025-09-08-220705.png)
 
-Use Case Diagram:  
+> This ER Diagram shows all main entities in Trucksy, including **Users, Clients, Owners, Food Trucks, Items, Orders, Payments, Reviews, Dashboards, Discounts, and BankCards**, along with their relationships.  
+> It also visualizes one-to-one, one-to-many, and many-to-many relations clearly.  
+
+### Use Case Diagram
+![Use Case Diagram](https://github.com/HassanAL-Hussaini/Trucksy/blob/Env/Use_case_daigram.png)
+
+> The Use Case Diagram illustrates interactions between **Customers, Owners, and Admins** with the Trucksy system.  
+> It highlights key functionalities like **ordering, reviewing, managing trucks, and subscription handling**.  
+
+---
+
+## Enhancements & Creative Improvements
+- **Colorful diagrams**: Entities and relationships are color-coded for clarity (use Mermaid for dynamic visualization).  
+- **Detailed captions**: Each diagram has a short description explaining the functionality.  
+- **Better structure**: Features, roles, endpoints, and diagrams are well-organized for quick reading.  
+- **Visual cues**: Arrows and symbols in diagrams represent cardinality and relationships.  
+- **Future-ready**: New entities like **BankCard** are included in the ERD with relationships to users.  
+
+---
+
+## Summary
+Trucksy is designed to be a **full-featured backend solution** for food trucks in Riyadh.  
+It balances **customer convenience, owner management, and admin control**, while integrating **AI-powered insights** for premium users.  
+With clear data modeling, secure payment integration, and location-based services, Trucksy provides a complete ecosystem for food truck operations.  
